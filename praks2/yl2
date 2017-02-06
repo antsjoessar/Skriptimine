@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Isikuandmed
+#
+echo "Ants Jõessar" # väljasta ilma reavahetuseta Ants Jõessar
+echo "ISP16" # väljasta ilma reavahetuseta ISP16
+echo "Huvitav ja samas raske" # väljasta ilma reavahetuseta Huvitav ja samas raske
+echo "Sain tunnitöö tehtud" # väljasta Sain tunnitöö tehtud ja tee reavahetus
+#
+# skripti lõpp
