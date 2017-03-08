@@ -1,22 +1,31 @@
 #!/bin/bash
+#
 # arvu pos/neg kt
 #
-# küsime väärtused kasutaja käest
-echo -n "sisesta arv: "
-read arv
-# kontrollime, kas arv on pos
-# sel juhul arv peab olema suurem kui 0
-if [ $arv -gt 0 ]
-then
-	echo "$arv on pos"
-# muidu kui väärtus in neg
-# siis arv peab olema väiksem kui 0
-elif [ $arv -lt 0 ]; then
-	echo "$arv on neg"
-# kui esimene tingimus
-# või teine tingimus ei sobinud
-# siis kasuta else osa
+# kontrollime kas kasutaja sisestas käsurea kaudu 1 parameetri
+# kui mitte - trükime kasutusjuhend välja
+if [ $# -ne 1 ]; then
+	echo "kasutusjuhen:"
+	echo "$0 number"
+	echo "näiteks: $0 5"
+#kui aga sisestatud korralikult 1 parameeter, siis 
 else
+	# sisestame väärtused kasutaja käest
+	arv=$1
+	# kontrollime, kas arv on pos
+	# sel juhul arv peab olema suurem kui 0
+	if [ $arv -gt 0 ]; then
+		echo "$arv on pos"
+		# muidu kui väärtus in neg
+		# siis arv peab olema väiksem kui 0
+	elif [ $arv -lt 0 ]; then
+		echo "$arv on neg"
+	# kui esimene tingimus
+	# või teine tingimus ei sobinud
+	# siis kasuta else osa
+	else
 	echo "$arv on neutraalne"
-# if lause tuleb korralikult lõpetada
+	# if lause tuleb korralikult lõpetada
+	fi
+	#väilne if lause tuleb korralikult lõpetada
 fi
