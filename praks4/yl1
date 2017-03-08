@@ -1,0 +1,17 @@
+#!/bin/bash
+# arvu pos/neg kt
+#
+# küsime väärtused kasutaja käest
+echo -n "sisesta arv: "
+read arv
+# kontrollime, kas arv on pos
+# sel juhul arv peab olema suurem kui 0
+if [ $arv -gt 0 ]
+then
+	echo "$arv on pos"
+# kui väärtus in neg
+# siis arv peab olema väiksem kui 0
+else
+	echo "$arv on neg"
+# if lause tuleb korralikult lõpetada
+fi
