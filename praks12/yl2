@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#aja järgi teavitamine
+#
+#küsib täistunndi
+aeg=`date | cut -c12-13 `
+#kontrollib vastust
+if [ $aeg -ge 6 -a $aeg -lt 12 ]; then
+	tervitus="Tere hommikust"
+elif [ $aeg -ge 12 -a $aeg -lt 18 ]; then 
+	tervitus="Tere päevast"
+elif [ $aeg -ge 18 -a $aeg -lt 22 ]; then
+	tervitus="Tere õhtust"
+elif [ $aeg -ge 22 -a $aeg -lt 24 ] || [ $aeg -ge 0 -a $aeg -lt 6 ]; then
+	tervitus="Head ööd"
+else
+	tervitus="Vale seisund"
+fi
+kasutaja=`whoami `
+echo "$tervitus, $kasutaja!"
+#skripti lõpp
+
