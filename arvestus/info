@@ -1,0 +1,14 @@
+o#!/bin/bash
+# Ants Jõessar Info
+#kasutaja tervitamine
+#
+kasutaja=`whoami` #väärtus saadakse whoami käsust
+# väljastame muutuja väärtuse koos seletusega
+echo "Tere, $kasutaja"
+#loome ja väljastame kuupäeva ning kellaaja
+kuupaev=`date +'%d. %B'+'%H:%M'`
+echo "Täna on $kuupaev" # näitab kuupäeva ja kellaega
+echo `cal` #näitab kalendrit
+#skripti lõpp
+
+
