@@ -1,0 +1,41 @@
+1.#!/bin/bash alati esimene
+2.käsud
+3.tekst	  kasutame echo -n "tekst"
+echo "Tere, user!" user saab $(whoami) või `whoami`
+echo $(date+"%d%m") tuleb tänane kpp.
+nimi=väärtus
+nimi="Ants"
+vanus=17
+shind=2.45 koma ei ole
+echo $nimi
+touch fail$täna fail24.04
+if [ tingimus ];then		
+...	
+else
+...
+fi
+a=1	b=2
+$a -eq $b
+$a -ne $b
+$a -gt $b
+$a -lt $b
+
+if [.....]; then
+....
+elif [........]; then
+.......
+elif [.....]; then
+.....
+else .....
+fi
+		$? ecitstatus
+		$#
+	./yl1	ants	17
+	=	=	=
+	$0	$1	$2
+		=	=
+		   $#=2
+for (( k=1; k<5! k++))
+do
+echo $k
+done
