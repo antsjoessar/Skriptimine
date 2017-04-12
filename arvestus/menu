@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#Ants Jõessar Menu
+#Näitab, mis on menüüs
+#
+echo "
+1) steak and potatoes
+2) fish and chips
+3) soup and salad"
+echo -e "Sisestage oma valikuga number" #sisestatakse enda roa nr
+read number
+#kontrollime vastust 12 rida
+if [ "$number" = "1" ]; then
+echo "$number steak and potatoes" #näitab mis valisite
+elif [ "$number" = "2" ]; then
+echo "$number fish and chips" #näitab mis valisite
+else
+echo "$number soup and salad" #näitab mis valisite
+#skripti lõpp
+fi
