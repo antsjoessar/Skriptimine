@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+#Ants Jõessar roopkylik
+#
+#teeb rööpküliku
+#
+echo -n "Sisesta ridade arv: "
+read rida
+#ridade arv
+for ((r=1; r<$rida+1; r++))
+do
+	echo -n "$r " # tühjad kohad tulevad
+	for(( v=1; v<$(($rida+1-$r+1)); v++))
+	do
+		echo -n " "
+done
+for (( i= $rida; i<= $rida; i++ )) # tärnid tulevad sinna kuhu vaja
+do
+		for ((j = 1 ; j <= i ; j++ ))
+		do
+	echo -n "*"
+	done
+done
+echo "" # reavahetus pärast lõppu
+done
+
