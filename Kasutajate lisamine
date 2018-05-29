@@ -1,0 +1,12 @@
+for nimi in $(cat võistluse_nimed_noDup.csv | cut -d "," -f1);
+
+
+	do
+
+	sh lisakasutaja $nimi
+
+	done
+for parool in $(cat võistluse_nimed_noDup.csv | cut -d "," -f2);
+	do
+		echo $parool | chpasswd
+done
